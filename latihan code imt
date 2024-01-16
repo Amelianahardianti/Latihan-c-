@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int berat;
+    float tinggi;
+    float imt;
+    
+    cout << "masukan berat badan anda " << endl;
+    cin >> berat;
+    cout << "masukan tinggi badan anda " << endl;
+    cin >> tinggi;
+    
+    imt=berat/(tinggi*tinggi);
+    if (imt <= 18.5){
+        cout << " nilai imt anda adalah " << imt << " anda termaksud kriteria kurus";
+    } else if (18.5 < imt && imt <=25){
+        cout << " nilai imt anda adalah " << imt << " anda termaksud kriteria normal";
+    } else if (25<imt && imt <=30){
+        cout << " nilai imt anda adalah " << imt << " anda termaksud kriteria gemuk";
+    }else if (imt>30){
+        cout << " nilai imt anda adalah " << imt << " anda termaksud kriteria obesitas";
+    }else {
+        cout << " error" << endl;
+    }
+    return 0;
+}
