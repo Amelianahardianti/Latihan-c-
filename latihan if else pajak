@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+const float MEWAH=0.005;
+const float MENENGAH=0.002;
+int main(){
+    float pajak;
+    int harga;
+    
+    cout << "masukan harga barang!" << endl;
+    cin >>  harga;
+    if(3000 < harga){
+        pajak = harga *  MENENGAH;
+        cout << "barang dengan harga " << harga << " memiliki pajak " << pajak<<endl;
+        cout << "dengan presentase pajak " << MENENGAH << endl;
+    }
+    else if(10000<harga){
+        pajak= harga * MEWAH;
+        cout << "barang dengan harga " << harga << " memiliki pajak " << pajak <<endl;
+        cout << "dengan presentase pajak " << MEWAH << endl;
+    }
+    else {
+        cout << " barang dengan harga " << harga << " tidak terkena pajak" << endl;
+    }
+    return 0;
+}
