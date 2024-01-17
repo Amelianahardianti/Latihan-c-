@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int tinggi;
+    int i,j,k;
+
+    cout << "Masukkan tinggi segitiga: ";
+    cin >> tinggi;
+
+    // Membuat pola segitiga bintang dan angka
+    for ( i = 1; i <= tinggi; i++) {
+        // Cetak bintang
+        for (j = 1; j <= i; j++) {
+            cout << "* ";
+        }
+
+        // Cetak angka
+        for ( k = 1; k <= i; k++) {
+            cout << " ";
+        }
+
+        // Pindah baris setelah selesai satu baris
+        cout << endl;
+    }
+
+    return 0;
+}
