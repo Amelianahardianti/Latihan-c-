@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int i=1;
+    int hasilfaktorial=1;
+    int faktorial;
+    
+    cout << "masukan nilai faktorial" << endl;
+    cin >>faktorial;
+    while (i <= faktorial){
+        hasilfaktorial*=i;
+        i++;
+    }
+    cout << "hasil dari faktorial" << faktorial << " adalah " << " hasil faktorial " << hasilfaktorial;
+    return 0;
+}
