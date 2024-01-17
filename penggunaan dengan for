@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+    int i;
+    int faktorial;
+    int hasilfaktorial=1;
+    
+    cout << "masukan nilai faktorial ";
+    cin >> faktorial;
+    
+    for(i=1;i<=faktorial;++i) {
+    hasilfaktorial*=i;
+    }
+    
+    cout << "hasilnya " << hasilfaktorial;
+    
+    return 0;
+}
