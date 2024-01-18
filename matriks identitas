@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int ordo;
+
+    cout << "Masukkan ukuran ordo matriks identitas: ";
+    cin >> ordo;
+
+    // Membuat dan mencetak matriks identitas
+    for (int i = 0; i < ordo; ++i) {
+        for (int j = 0; j < ordo; ++j) {
+            if (i == j) {
+                cout << "1 ";
+            } else {
+                cout << "0 ";
+            }
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
